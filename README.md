@@ -2,7 +2,7 @@
 
 Reproducible study of three RL agents on `MountainCar-v0`, culminating in **Safe PPO**
 (a dual-critic PPO-Lagrangian agent that respects a soft proportional speed constraint
-expressed as a Constrained MDP). Companion code for the paper in `paper/main.pdf`.
+expressed as a Constrained MDP).
 
 ## Project structure
 
@@ -88,8 +88,8 @@ Each run writes `metrics.json` + checkpoint to `results/<algo>/seed_<s>/`.
 ## Regenerate figures from results
 
 ```bash
-python notebooks/analysis.py
+python scripts/analysis.py
 ```
 
 Reads every `results/<algo>/seed_*/metrics.json`, computes mean±std bands across seeds,
-and writes PDF + PNG figures to `paper/figures/`.
+and writes figures to `paper/figures/`.
