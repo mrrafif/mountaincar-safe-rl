@@ -1,0 +1,12 @@
+episodes: 450
+max_steps: 200
+batch_size: 64
+buffer_capacity: 50000
+target_sync_freq: 5
+lr: 0.001
+gamma: 0.99
+epsilon_start: 1.0
+epsilon_min: 0.05
+epsilon_decay: 0.995
+hidden_size: 64
+log_every: 30

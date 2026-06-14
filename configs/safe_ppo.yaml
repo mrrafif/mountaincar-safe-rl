@@ -1,0 +1,18 @@
+epochs: 150
+steps_per_epoch: 4000
+max_ep_len: 200
+clip_ratio: 0.2
+pi_lr: 0.0003
+vf_lr: 0.001
+lam_lr: 0.005
+train_pi_iters: 80
+train_v_iters: 80
+gamma: 0.99
+lam: 0.95
+ent_coef: 0.01
+hidden_size: 64
+max_speed: 0.04
+cost_limit: 15.0
+log_lambda_init: -3.0
+log_every: 5
+record_every: 0   # >0 = save a training-process video every N epochs (e.g. 10)

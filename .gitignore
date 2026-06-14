@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Models & results
+results/**/*.pt
+
+# Planning & reports
+PLAN.md
+review/
+paper/
+video_report_deck*.pptx
+video_report_script*.md
+notebooks/MountainCar_main.ipynb
