@@ -93,3 +93,10 @@ python scripts/analysis.py
 
 Reads every `results/<algo>/seed_*/metrics.json`, computes mean±std bands across seeds,
 and writes figures to `paper/figures/`.
+
+## Declaration of AI Usage
+The core concepts, mathematical formulations, constraint designs, and the structured two-stage hyperparameter protocol for this project were entirely conceptualized by our human team. We utilized AI tools (e.g., Claude AI and Gemini) as programming assistants to help draft and structure the source code. To rigorously verify the correctness of the AI-assisted code, we performed the following checks:
+
+* Theoretical Verification: We manually reviewed the policy updates and generalized advantage estimation (GAE) implementations to ensure they strictly aligned with our defined PPO-Lagrangian formulas.
+
+* Empirical Baselines: We built progressive agents (DQN and unconstrained PPO) to establish trusted baselines. We compared the Safe PPO agent against these baselines to ensure the core learning loops were functioning properly.
